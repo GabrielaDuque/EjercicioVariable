@@ -1,0 +1,6 @@
+C:\Users\formacio\source\repos\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+C:\Users\formacio\source\repos\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.exe
+C:\Users\formacio\source\repos\Ejercicio1\Ejercicio1\bin\Debug\Ejercicio1.pdb
+C:\Users\formacio\source\repos\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.csprojAssemblyReference.cache
+C:\Users\formacio\source\repos\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.exe
+C:\Users\formacio\source\repos\Ejercicio1\Ejercicio1\obj\Debug\Ejercicio1.pdb
