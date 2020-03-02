@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,39 +7,30 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
     class Program
+       
     {
+        
         static void Main(string[] args)
+          
         {
+            const int añobisi = 1948;
+            const int cadacuanto = 4;
+
             //Fase 1
             string nom = "Gabriela";
             String cognom1 = "Duque";
             String cognom2 = "Arias";
-            Console.WriteLine("Ingresa la fecha");
-            String input = Console.ReadLine();
-            String input2 = Console.ReadLine();
-            String input3 = Console.ReadLine();
-            int dia = 30;
-            int mes = 01;
-            int any = 2020;
-            Int32.TryParse(input, out dia);
-            Int32.TryParse(input2, out mes);
-            Int32.TryParse(input3, out any);
-            String lol = "La fecha de hoy es " + input + "/" + input2 + "/" + input3;
+            int dia = 07;
+            int mes = 08;
+            int any = 1999;
+            String lol = "La fecha de hoy es " + dia + "/" + mes + "/" + any;
             System.Console.WriteLine(lol);
-            Console.WriteLine("Ingresa tu nombre");
-            nom = Console.ReadLine();
-            Console.WriteLine("Ingresa tus apellidos");
-            cognom1 = Console.ReadLine();
-            cognom2 = Console.ReadLine();
             String str = "Tu nombre completo es: " + nom + " " + cognom1 + " " + cognom2;
             System.Console.WriteLine(str);
 
             //Fase 2
-            Console.WriteLine("Ingresa tu año de nacimiento");
-            int añonaci = int.Parse(Console.ReadLine());
-            int cadacuanto = 4;
-            var diasanio = 365;
-            int añobisi = 1948;
+
+            int añonaci = 1999;
             int resta = añonaci - añobisi;
             int divi = resta / cadacuanto;
             Console.WriteLine(" Hay " + divi + " Años desde 1948 hasta 1999");
@@ -67,14 +58,24 @@ namespace ConsoleApp1
 
             // Fase 4
             Console.WriteLine("Tus datos");
-            Console.WriteLine("Tu nombre completo es: " + nom + " " + cognom1 + " " + cognom2);
-            Console.WriteLine("Tu año de nacimiento es" + añonaci );
+            Console.WriteLine("Mi nombre completo es: " + nom + " " + cognom1 + " " + cognom2);
+            Console.WriteLine("Mi fecha de nacimiento es"  +dia + "/" + mes + "/" + any);
 
-            if (añonaci == 1999)
+
+
+            if (añonaci % 4 == 0)
             {
-                Console.WriteLine("Tu año de nacimiento no es bisiesto");
+                Console.WriteLine("Es bisiesto {0}\n", añonaci);
+
             }
-     
+            else
+            {
+                Console.WriteLine("no es bisiesto {0} \n", añonaci);
+            }
+
+
+            Console.ReadKey();
+
             Console.ReadKey();
 
 
