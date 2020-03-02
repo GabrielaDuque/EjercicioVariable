@@ -9,9 +9,9 @@ namespace ConsoleApp1
     class Program
        
     {
-        
+
         static void Main(string[] args)
-          
+
         {
             const int añobisi = 1948;
             const int cadacuanto = 4;
@@ -37,6 +37,7 @@ namespace ConsoleApp1
             Console.ReadKey();
 
 
+
             //Fase 3 : Años bisiestos desde 1948 hasta tu año de nacimiento
 
             var años = new[] { 1948, 1952, 1956, 1960, 1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, };
@@ -50,7 +51,7 @@ namespace ConsoleApp1
 
             }
 
-           
+            bool bisiesto = añonaci % 4 == 0;
 
 
 
@@ -63,7 +64,7 @@ namespace ConsoleApp1
 
 
 
-            if (añonaci % 4 == 0)
+            if (bisiesto)
             {
                 Console.WriteLine("Es bisiesto {0}\n", añonaci);
 
@@ -76,7 +77,7 @@ namespace ConsoleApp1
 
             Console.ReadKey();
 
-            Console.ReadKey();
+            
 
 
         }
